@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Design by foolishdeveloper.com -->
+    <title>Glassmorphism login Form Tutorial in html css</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+      *:before,
+      *:after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #080710;
+      }
+
+      form {
+        height: 37rem;
+        width: 37rem;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        padding: 50px 35px;
+      }
+      form * {
+        font-family: "Poppins", sans-serif;
+        color: #ffffff;
+        letter-spacing: 0.5px;
+        outline: none;
+        border: none;
+      }
+      input {
+        display: block;
+        height: 3rem;
+        width: 100%;
+        background-color: #eef2fa;
+        border-radius: 2rem;
+        padding: 0 10px;
+        font-size: 14px;
+        font-weight: 300;
+        opacity: 80%;
+        color: #131212;
+        box-shadow: 0 0 5px 5px #fff;
+        filter: blur(0.1px);
+        z-index: -3;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 4rem;
+      }
+
+      ::placeholder {
+        color: #131212;
+        display: flex;
+        flex-direction: row;
+        font-weight: lighter;
+        font-size: large;
+      }
+      .circle {
+        background: #2a3135;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: 13rem;
+        margin-right: 3rem;
+        margin-top: -6.77rem;
+      }
+   
+      span.circle {
+        background: #211f26;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        color: white;
+        display: inline-block;
+        font-weight: bold;
+        line-height: 155px;
+        margin-right: 5px;
+        text-align: center;
+        width: 100px;
+        margin-top: -4.88rem;
+      }
+      h1 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: -4.7rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background"></div>
+    <form>
+      <div class="container">
+        <input
+          type="text"
+          placeholder="Name                                                                         الاسم"
+          id="username"
+        />
+      </div>
+      <span class="circle"></span>
+      <h1>1</h1>
+    </form>
+  </body>
+</html>
