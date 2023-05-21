@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Design by foolishdeveloper.com -->
-    <title>Glassmorphism login Form Tutorial in html css</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <!--Stylesheet-->
     <style media="screen">
       *,
       *:before,
@@ -29,15 +16,28 @@
       form {
         height: 37rem;
         width: 37rem;
-        background: rgba(20, 18, 24, 0.8);
+        --x: 50%;
+        --y: 50%;
+        appearance: none;
+        outline: none;
         opacity: 80%;
         position: absolute;
         transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
-        border-radius: 4rem;
+        border: solid 3px transparent;
+        border-radius: 2rem;
         backdrop-filter: blur(10px);
-        border: 2px solid rgba(255, 255, 255, 0.1);
+        background: linear-gradient(#302f2f, #302f2f) padding-box,
+          radial-gradient(
+              farthest-corner at var(--x) var(--y),
+              #00c9a7,
+              #845ec2,
+              #0d213f
+            )
+            border-box;
+        border-image-slice: 1;
+
         box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
         padding: 50px 35px;
       }

@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Design by foolishdeveloper.com -->
-    <title>Glassmorphism login Form Tutorial in html css</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <!--Stylesheet-->
     <style media="screen">
       *,
       *:before,
@@ -25,30 +12,7 @@
       body {
         background-color: #080710;
       }
-      .background {
-        width: 430px;
-        height: 520px;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        top: 50%;
-      }
-      .background .shape {
-        height: 200px;
-        width: 200px;
-        position: absolute;
-        border-radius: 50%;
-      }
-      .shape:first-child {
-        background: linear-gradient(#1845ad, #23a2f6);
-        left: -80px;
-        top: -80px;
-      }
-      .shape:last-child {
-        background: linear-gradient(to right, #ff512f, #f09819);
-        right: -30px;
-        bottom: -80px;
-      }
+
       form {
         height: 316px;
         width: 552px;
@@ -58,11 +22,25 @@
         transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
+        --x: 50%;
+        --y: 50%;
         border-radius: 9rem;
         backdrop-filter: blur(10px);
-        border: 2px solid rgba(255, 255, 255, 0.1);
+        /* border: 2px solid rgba(255, 255, 255, 0.1); */
         box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
         padding: 50px 35px;
+        border: solid 3px transparent;
+        border-radius: 9rem;
+        backdrop-filter: blur(10px);
+        background: linear-gradient(#302f2f, #302f2f) padding-box,
+          radial-gradient(
+              farthest-corner at var(--x) var(--y),
+              #00c9a7,
+              #845ec2,
+              #0d213f
+            )
+            border-box;
+        border-image-slice: 1;
       }
       form * {
         font-family: "Poppins", sans-serif;
@@ -78,7 +56,7 @@
         width: 216px;
         height: 216px;
       }
-      
+
       .circle-container {
         display: flex;
         flex-wrap: nowrap;
@@ -113,7 +91,7 @@
         </div>
         <div class="circle">
           <svg
-          class="icon"
+            class="icon"
             width="64"
             height="81"
             viewBox="0 0 64 81"
